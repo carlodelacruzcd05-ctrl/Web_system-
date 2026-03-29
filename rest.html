@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Div based layout</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: gray;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+nav{
+  background:red;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+nav li{
+  padding:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+nav a:active {
+  background-color: aqua;
+  padding: 10px;
+  text-decoration: none;
+}
+
+main{
+  display:flex;
+}
+
+#aside{
+  width:20%;
+  background:#f0f0f0;
+  padding:10px;
+}
+
+#section{
+  width:40%;
+  padding:10px;
+}
+
+#article{
+  width:40%;
+  padding:10px;
+}
+
+footer{
+  background-color:pink;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media screen and (max-width:800px){
+  main{
+    flex-direction:column;
+  }
+  #aside,
+  #section,
+  #article{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Header</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="#Home">Home</a></li>
+<li><a href="#News">News</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li><a href="#About">About</a></li>
+</ul>
+</nav>
+
+<main>
+
+<div id="aside">
+<h1>Aside</h1>
+<h2>I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.</h2>
+</div>
+
+<div id="section">
+<h1>Section</h1>
+<h2>
+I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.
+I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.
+I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.
+</h2>
+</div>
+
+<div id="article">
+<h1>Article</h1>
+<h2>
+I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.
+I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.
+I HEREBY CERTIFY that the information provided in this form is complete, true, and correct to the best of my knowledge.
+</h2>
+</div>
+
+</main>
+
+<footer>
+<h1>Footer</h1>
+</footer>
+
+</body>
+</html>
