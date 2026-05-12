@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>grid</title>
+  <style>
+    body {
+     .grid-a {
+      display: grid;
+      grid-template-columns: 200px 75px;
+      margin-bottom: 20px;
+    }
+
+    .grid-a div {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid yellowgreen;
+    }
+
+    .grid-b {
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+      margin-bottom: 20px;
+    }
+
+    .grid-b div {
+      background:lightpink;
+      padding: 10px;
+      border: 1px solid violet;
+    }
+    .grid-c {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 5px;
+      row-gap: 10px;
+    }
+
+    .grid-c div {
+      background: forestgreen;
+      padding: 10px;
+      border: 1px solid pink;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-a">
+    <div>200px hirap mæm</div>
+    <div>75px HEHEHE</div>
+  </div>
+
+  <div class="grid-b">
+    <div>A1</div>
+    <div>B2 how to change po yung color? nalimutan :))</div>
+    <div>C3</div>
+  </div>
+
+  <div class="grid-c">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+</body>
+</html>
